@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFuncionario.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="\index.html"> Empreiteira </a>
+
+    <a id="cliente" href="/Cliente/ClienteInicio.html"> Cliente </a>
+    <a id="funcionario" href="/Funcionário/FuncionarioInicio.html"> Funcionario </a>
+    <a id="obra" href="/Obra/ObraInicio.html"> Obra </a>
+    <a id="os" href="/OS/OsInicio.html"> OS </a>
+
+    <a id="entrar" href="index.html"> Entrar </a>
+    <a id="funcionalidades" href="cadastro.html"> Funcionalidades </a>
+    <a id="contato" href="contato.html"> Contato </a>
+</div>
+
+<body>
+    
+        <div name="formulario-funcionario" id="form-funcionario" class="formularios">
+
+            <h1 id="subTitulo">Funcionário</h1>
+           
+            <div id="botaoCliente">
+             <a href="FuncionarioCadastro.html"><input type="button" value="Cadastrar"/></a>
+            </div>
+
+            <br>
+
+        </div>
+
+<div id="botaoCliente">
+    <input type="text" placeholder="Buscar" oninput="ListarPorCriterio(this)">
+</div>
+    
+    <br>
+    <table id="tabela-funcionarios" class="mostrar" border="5px">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    CPF
+                </th>
+                <th>
+                    Cargo
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabela-funcionarios-body">
+
+        </tbody>
+    </table>
+    </div>
+
+
+    <script src="jquery.js"></script>
+    
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="funcionario.js"></script>
+</body>
+
+</html>

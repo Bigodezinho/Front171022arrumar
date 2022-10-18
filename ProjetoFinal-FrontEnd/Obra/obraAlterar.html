@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleObra.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="\index.html"> Empreiteira </a>
+
+    <a id="cliente" href="/Cliente/ClienteInicio.html"> Cliente </a>
+    <a id="funcionario" href="/Funcionário/FuncionarioInicio.html"> Funcionario </a>
+    <a id="obra" href="/Obra/ObraInicio.html"> Obra </a>
+    <a id="os" href="/OS/OsInicio.html"> OS </a>
+
+    <a id="entrar" href="FRONT0510222-MAIN/login.html"> Entrar </a>
+    <a id="funcionalidades" href="cadastro.html"> Funcionalidades </a>
+    <a id="contato" href="contato.html"> Contato </a>
+</div>
+
+<body>
+
+    <div>
+        <div id="alterar-obra" class="ocultar">
+            <h1>Alterar Obra</h1>
+            <br>
+            <div class="input-group row justify-content-center">
+                <label for="obra-id-alterar">ID</label>
+                <input type="text" class="form-control col-4 input-group"  id="obra-id-alterar" readonly>
+            </div>
+            <br>
+            <label for="obra-descricao-alterar">Descrição:</label>
+            <input type="text" id="obra-descricao-alterar" />
+            <label for="obra-inicio-alterar">Data de início da obra:</label>
+            <input type="date" id="obra-inicio-alterar" />
+            <label for="obra-final-alterar">Previsão de término:</label>
+            <input type="date" id="obra-final-alterar" />
+            <div class="centro">
+                <input type="button" value="Alterar Obra" onclick="handlerAlterarObra()" />
+                <input type="button" value="Cancelar" onclick="toogleAlterarObra()" />
+                <input type="button" value="Deletar" onclick="handlerDeleteObra()" />
+            </div>
+        </div>
+        <table id="tabela-obras" class="mostrar">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Descrição
+                    </th>
+                    <th>
+                        Data de início da obra
+                    </th>
+                    <th>
+                        Previsão de término
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabela-obras-body">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="jquery.js"></script>
+    
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="cliente.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="obra.js"></script>
+    <script src="obraAlterar.js"></script>
+    <script src="OS.js"></script>
+</body>
+
+</html>

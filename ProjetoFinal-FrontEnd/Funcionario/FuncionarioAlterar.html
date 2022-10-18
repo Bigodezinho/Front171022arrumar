@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFuncionario.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="\index.html"> Empreiteira </a>
+
+    <a id="cliente" href="index.html"> Cliente </a>
+    <a id="funcionario" href="cadastro.html"> Funcionario </a>
+    <a id="obra" href="contato.html"> Obra </a>
+    <a id="os" href="contato.html"> OS </a>
+
+    <a id="entrar" href="index.html"> Entrar </a>
+    <a id="funcionalidades" href="cadastro.html"> Funcionalidades </a>
+    <a id="contato" href="contato.html"> Contato </a>
+</div>
+
+<body>
+
+    <div name="formulario-funcionario" id="form-funcionario" class="formularios">
+        <br>
+        <h1 id="subTitulo">Alterar Funcionário</h1>
+        <br>
+
+
+        
+        <div id="contCampos" class="input-group row justify-content-center">
+            <label for="funcionario-id-alterar">ID</label>
+            <input type="text" class="form-control col-4 input-group"  id="funcionario-id-alterar" readonly>
+        </div>
+
+        <br>
+
+        <div id="contCampos">
+        <label for="funcionario-nome-alterar">Nome:</label>
+        <input type="text" id="funcionario-nome-alterar" />
+        <label for="funcionario-cpf-alterar">CPF:</label>
+        <input type="text" id="funcionario-cpf-alterar" />
+        <label for="funcionario-cargo-alterar">Cargo:</label>
+        <input type="text" id="funcionario-cargo-alterar" />
+        </div>
+
+        <br>
+
+        <div id="botaoCliente">
+            <input type="button" value="Alterar Funcionario" onclick="handlerAlterarFuncionario()" />
+            <input type="button" value="Cancelar" onclick="toogleAlterarFuncionario()" />
+            <input type="button" value="Deletar" onclick="handlerDeleteFuncionario()" />
+        </div>
+    </div>
+
+    <br>
+
+    <table id="tabela-funcionarios" class="mostrar" border="5px">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    CPF
+                </th>
+                <th>
+                    Cargo
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabela-funcionarios-body">
+
+        </tbody>
+    </table>
+    </div>
+
+
+    <script src="jquery.js"></script>
+    
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="funcionarioAlterar.js">  </script>
+</body>
+
+</html>
